@@ -66,4 +66,13 @@ json_serializable: ^2.0.0
 2. 创建或拷贝Json文件到"jsons" 目录中;
 3. 运行 pub run json_model (Dart VM工程)or flutter packages pub run json_model(Flutter中) 命令生成Dart model类，生成的文件默认在"lib/models"目录下。
 
+使用Json_model包时，在.json文件里不能有注释，否则会报错，json数据的key名字里不能有_否则z转完会报错
 
+
+4.FlutterJsonBeanFactory插件
+-----------
+使用FlutterJsonBeanFactory插件来辅助生成Bean类。
+安装方法:在Android Studio里依次选择【Android Studio】->【Preferences…】->【Plugins】，然后搜索FlutterJsonBeanFactory插件安装即可，如图:
+
+![](images/FlutterJsonBeanFactoryImage.png)
+    
