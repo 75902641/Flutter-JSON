@@ -75,4 +75,3 @@ json_serializable: ^2.0.0
 安装方法:在Android Studio里依次选择【Android Studio】->【Preferences…】->【Plugins】，然后搜索FlutterJsonBeanFactory插件安装即可，如图:
 
 ![](images/FlutterJsonBeanFactoryImage.png)
-    
