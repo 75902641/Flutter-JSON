@@ -35,5 +35,5 @@ print('We sent the verification link to ${user['email']}.');
 
 2.在线生成
 -----------
-代开JSON to Dart网站[https://javiercbk.github.io/json_to_dart/](https://javiercbk.github.io/json_to_dart/)
+打开JSON to Dart网站[https://javiercbk.github.io/json_to_dart/](https://javiercbk.github.io/json_to_dart/)
 
