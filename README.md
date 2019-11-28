@@ -6,4 +6,16 @@ JSON(JavaScript Object Notation, JS 对象简谱) 是一种轻量级的数据交
 ****
 1.手动解析
 -----------
+手动解析通常应用在一些基本简单的场合，即数据结构不是很复杂的场景，可以通过dart:convert中内置的JSON解码器json.decode() 来实现，该方法可以根据JSON字符串具体内容将其转为List或Map，这样我们就可以通过他们来查找所需的值，如：
+
+```Dart
+/一个JSON格式的用户列表字符串
+String jsonStr='[{"name":"Jack"},{"name":"Rose"}]';
+//将JSON字符串转为Dart对象(此处是List)
+List items=json.decode(jsonStr);
+//输出第一个用户的姓名
+print(items[0]["name"]);
+```
+
+
 
