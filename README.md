@@ -37,6 +37,6 @@ print('We sent the verification link to ${user['email']}.');
 -----------
 打开JSON to Dart网站[https://javiercbk.github.io/json_to_dart/](https://javiercbk.github.io/json_to_dart/)
 
-[![](images/JSONtoDart.png)][]
+![](images/JSONtoDart.png)
 
 https://github.com/75902641/Flutter-JSON/blob/master/images/JSONtoDart.png?raw=true
