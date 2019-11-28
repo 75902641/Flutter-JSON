@@ -39,4 +39,29 @@ print('We sent the verification link to ${user['email']}.');
 
 ![](images/JSONtoDart.png)
 
-https://github.com/75902641/Flutter-JSON/blob/master/images/JSONtoDart.png?raw=true
+把JSON数据拷贝到输入框中，填写类名，然后点击Generate Dart按钮，生成出来的json类就在图的右边，在项目里创建Dart数据类直接把生成出来的复制过去就行了
+
+![](images/jsonModelPic.png)
+
+3.Json_model包
+-----------
+参考  [Json_model](https://github.com/flutterchina/json_model)
+
+安装
+
+```Dart
+dependencies:
+json_annotation: ^2.0.0
+
+
+dev_dependencies:
+json_model: #最新版本
+build_runner: ^1.0.0
+json_serializable: ^2.0.0
+
+```
+使用
+
+1.在工程根目录下创建一个名为 "jsons" 的目录;
+2.创建或拷贝Json文件到"jsons" 目录中 ;
+3.运行 pub run json_model (Dart VM工程)or flutter packages pub run json_model(Flutter中) 命令生成Dart model类，生成的文件默认在"lib/models"目录下
