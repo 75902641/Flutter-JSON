@@ -9,13 +9,26 @@ JSON(JavaScript Object Notation, JS 对象简谱) 是一种轻量级的数据交
 手动解析通常应用在一些基本简单的场合，即数据结构不是很复杂的场景，可以通过dart:convert中内置的JSON解码器json.decode() 来实现，该方法可以根据JSON字符串具体内容将其转为List或Map，这样我们就可以通过他们来查找所需的值，如：
 
 ```Dart
-/一个JSON格式的用户列表字符串
+//一个JSON格式的用户列表字符串
 String jsonStr='[{"name":"Jack"},{"name":"Rose"}]';
 //将JSON字符串转为Dart对象(此处是List)
 List items=json.decode(jsonStr);
 //输出第一个用户的姓名
 print(items[0]["name"]);
 ```
+通过json.decode() 将JSON字符串转为List/Map的方法比较简单，它没有外部依赖或其它的设置，对于小项目很方便。但当项目变大时，这种手动编写序列化逻辑可能变得难以管理且容易出错，例如有如下JSON:
 
+```Dart
+{
+  "name": "John Smith",
+  "email": "john@example.com"
+}
+```
+我们可以通过调用json.decode方法来解码JSON ，使用JSON字符串作为参数:
+```Dart
+Map<String, dynamic> user = json.decode(json);
 
-
+print('Howdy, ${user['name']}!');
+print('We sent the verification link to ${user['email']}.');
+```
+具体的可以参考 [https://book.flutterchina.club/chapter11/json_model.html](https://book.flutterchina.club/chapter11/json_model.html)。
