@@ -72,6 +72,11 @@ json_serializable: ^2.0.0
 4.FlutterJsonBeanFactory插件
 -----------
 使用FlutterJsonBeanFactory插件来辅助生成Bean类。
-安装方法:在Android Studio里依次选择【Android Studio】->【Preferences…】->【Plugins】，然后搜索FlutterJsonBeanFactory插件安装即可，如图:
+安装方法:在Android Studio里依次选择Android Studio->Preferences…->Plugins，然后搜索FlutterJsonBeanFactory插件安装即可，如图:
 
 ![](images/FlutterJsonBeanFactoryImage.png)
+
+安装成功之后重启Android Studio即可，重启之后在new的时候就会多一个dart bean class File from Json选项，如下图所示。
+
+![](images/jsonToDartBean.png)
+
