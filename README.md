@@ -32,3 +32,8 @@ print('Howdy, ${user['name']}!');
 print('We sent the verification link to ${user['email']}.');
 ```
 具体的可以参考 [https://book.flutterchina.club/chapter11/json_model.html](https://book.flutterchina.club/chapter11/json_model.html)。
+
+2.在线生成
+-----------
+代开JSON to Dart网站[https://javiercbk.github.io/json_to_dart/](https://javiercbk.github.io/json_to_dart/)
+
