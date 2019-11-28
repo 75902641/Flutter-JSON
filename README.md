@@ -76,7 +76,12 @@ json_serializable: ^2.0.0
 
 ![](images/FlutterJsonBeanFactoryImage.png)
 
-安装成功之后重启Android Studio即可，重启之后在new的时候就会多一个dart bean class File from Json选项，如下图所示。
+安装成功之后重启Android Studio即可，重启之后在new的时候就会多一个dart bean class File from Json选项，如图:
 
 ![](images/jsonToDartBean.png)
 
+选择dart bean class File from Json之后会弹出来Make Dart bean Class Code弹窗，在Class Name下面输入类名，在JSON Text下面输入要转的JSON数据，如图:
+
+![](images/adJSONToModel.png)
+
+然后，点击Make按钮就可以生成一个dart实体类。
